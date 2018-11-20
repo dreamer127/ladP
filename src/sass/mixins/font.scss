@@ -1,0 +1,29 @@
+$fonts_dir: '../fonts/';
+
+@mixin font($family, $name) {
+  $font_file_path: $fonts_dir + $family;
+
+  @font-face {
+    font-family: $name;
+    src: url($font_file_path + '.woff') format('woff'),
+    url($font_file_path + '.woff2') format('woff2');
+  }
+}
+
+// @mixin font-mixin($font_name, $font_weight: normal, $font_style:normal) {
+//   font-family: "#{$font_name}", 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+//   font-weight: $font_weight;
+//   font-style: $font_style;
+// }
+
+@mixin font-mixin($font_name, $weight: normal, $style:normal) {
+  font-family: "#{$font_name}", 'Arial', 'Helvetica', 'Tahoma', sans-serif;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// @mixin font-mixin($font) {
+//   @each $name, $value in $font {
+//     #{$name}:$value;
+//   }
+// }

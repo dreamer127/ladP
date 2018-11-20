@@ -1,0 +1,29 @@
+.about{
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 0 120px;
+  }
+  &__info{
+    flex-basis: 44%;
+    position: relative;
+
+    &-text{
+      @include asap;
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+    
+    &:before{
+      content: "";
+      position: absolute;
+      width: 60px;
+      border: 2px solid #4d4d4d;
+      left: 0;
+      top: -20px;
+
+    }
+  }
+}

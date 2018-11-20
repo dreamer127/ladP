@@ -1,0 +1,68 @@
+.services{
+  background-color: $bg;
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0 120px;
+  }
+
+  &__services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 60px;
+    
+    ._service{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      flex-basis: 30%;
+      padding: 0 50px;
+
+      &:nth-child(n+4){
+        margin-top: 80px;
+      }
+
+      &-icon{
+        
+      }
+      &-name{
+        @include asapMedium;
+        font-size: 24px;
+        line-height: 49px;
+      }
+    }
+  }
+}
+
+
+.bg{
+  &1 {
+    width: 77px; height: 77px;
+    background: url('../img/services.png') -303px -3px;
+  }
+  &2 {
+    width: 76px; height: 62px;
+    background: url('../img/services.png') -139px -3px;
+  }
+  &3 {
+    width: 67px; height: 75px;
+    background: url('../img/services.png') -66px -3px;
+  }
+  &4 {
+    width: 90px; height: 75px;
+    background: url('../img/services.png') -386px -3px;
+  }
+  &5 {
+    width: 57px; height: 81px;
+    background: url('../img/services.png') -3px -3px;
+  }
+  &6 {
+    width: 76px; height: 76px;
+    background: url('../img/services.png') -221px -3px;
+  }
+}

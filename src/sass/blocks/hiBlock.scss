@@ -1,0 +1,25 @@
+.hiBlock{
+  padding-top: 90px;
+  background: url("../img/hiBG.jpg") no-repeat;
+  
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info{
+    @include asapMedium;
+    font-size: 22px;
+    line-height: 67px;
+    color: $gray;
+
+    h1{
+      font-size: 90px;
+    }
+
+  }
+  &__photo{
+    flex-basis: 46%;
+  }
+}

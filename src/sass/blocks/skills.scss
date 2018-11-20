@@ -1,0 +1,9 @@
+.skills{
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 140px 0 120px;
+  }
+}

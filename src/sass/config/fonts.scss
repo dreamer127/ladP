@@ -1,0 +1,37 @@
+@import "mixins/font";
+
+@include font("Asap-Regular", "Asap");
+@mixin asap() {
+  @include font-mixin("Asap");
+}
+
+@include font("Asap-Bold", "Asap");
+@mixin asapBold() {
+  @include font-mixin("Asap", bold);
+}
+
+@include font("Asap-Italic", "Asap");
+@mixin asapItalic() {
+  @include font-mixin($font_name:"Asap", $style:italic);
+}
+
+@include font("Asap-Medium", "Asap");
+@mixin asapMedium() {
+  @include font-mixin("Asap", 500);
+}
+
+
+@include font("Lato-Regular", "Lato");
+  @mixin lato() {
+    @include font-mixin("Lato");
+  };
+
+@include font("Lato-Light", "Lato");
+  @mixin latoLight() {
+    @include font-mixin("Lato", 300);
+  };
+
+@include font("Montserrat-Regular", "Montserrat");
+  @mixin montserrat() {
+    @include font-mixin("Montserrat");
+}
